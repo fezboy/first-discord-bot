@@ -6,6 +6,10 @@
   "dependencies": {
     "discord.io": "^2.5.3"
   },
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/The-Bob/first-discord-bot/"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
