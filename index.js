@@ -1,7 +1,7 @@
 const Discord = require('discord.io');
 const aws = require('aws-sdk');
 
-let auth = new aws.s3({
+let auth = new aws.S3({
   token: process.env.AUTH_TOKEN
 });
 
