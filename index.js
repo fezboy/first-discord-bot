@@ -1,15 +1,7 @@
 const Discord = require('discord.io');
-const aws = require('aws-sdk');
-
-let auth = new aws.S3({
-  token: process.env.AUTH_TOKEN
-});
+const auth = {token: process.env.AUTH_TOKEN} || require('./auth.json');
 
 console.log(auth.token);
-
-if (!auth.token){
-	const auth = require('./auth.json');
-}
 
 var client = new Discord.Client({
 	autorun: true,
