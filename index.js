@@ -5,6 +5,8 @@ let auth = new aws.S3({
   token: process.env.AUTH_TOKEN
 });
 
+console.log(auth.token);
+
 if (!auth.token){
 	const auth = require('./auth.json');
 }
