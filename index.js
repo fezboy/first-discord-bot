@@ -1,5 +1,8 @@
 const Discord = require('discord.io');
-const auth = require('./auth.json');
+const auth = {token: process.env.AUTH_TOKEN} || require('./auth.json');
+
+console.log(auth.token);
+
 var client = new Discord.Client({
 	autorun: true,
 	token: auth.token
