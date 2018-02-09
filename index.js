@@ -3,8 +3,6 @@ const Discord = require('discord.io');
 require('dotenv').config();
 const token = process.env.AUTH_TOKEN;
 
-console.log(token);
-
 var client = new Discord.Client({
 	autorun: true,
 	token: token
