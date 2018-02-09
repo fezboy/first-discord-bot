@@ -59,6 +59,3 @@ typings/
 
 # next.js build output
 .next
-
-# auth code.  Don't steal my bot!
-auth.json

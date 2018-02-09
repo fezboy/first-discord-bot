@@ -1,11 +1,13 @@
 const Discord = require('discord.io');
-const auth = {token: process.env.AUTH_TOKEN} || require('./auth.json');
 
-console.log(auth.token);
+require('dotenv').config();
+const token = process.env.AUTH_TOKEN;
+
+console.log(token);
 
 var client = new Discord.Client({
 	autorun: true,
-	token: auth.token
+	token: token
 });
 
 client.on('ready', function(event) {
